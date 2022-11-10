@@ -1,0 +1,75 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  &-header {
+    height: 88px;
+    padding-left: 18%;
+    padding-right: 3rem;
+
+    .dfd {
+    }
+  }
+
+  &__icon-title {
+    font-size: 0.8rem;
+    margin-top: 0.45rem;
+  }
+
+  &__icon {
+    border-radius: 50%;
+    width: 2.66rem;
+    height: 2.66rem;
+    background: white;
+    margin: auto;
+    color: rgba(4, 55, 82, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-sidenav-container {
+    /* When the sidenav is not fixed, stretch the sidenav container to fill the available space. This
+       causes `<mat-sidenav-content>` to act as our scrolling element for desktop layouts. */
+    flex: 1;
+  }
+
+  &__side-nav {
+    width: calc(18% - 1.33rem);
+    background: rgba(4, 55, 82, 0.1);
+
+    .mat-list-item:hover {
+      background: rgba(4, 55, 82, 0.2);
+    }
+  }
+}
+
+:host {
+  ::ng-deep {
+    .mat-nav-list {
+      .mat-list-item {
+        font-weight: 400;
+        font-size: 12px !important;
+        line-height: 18px;
+        border-bottom: 1px solid rgba(4, 55, 82, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        padding-right: 2rem;
+      }
+    }
+
+    .mat-expansion-panel-header {
+      border-bottom: 1px solid rgba(4, 55, 82, 0.2);
+    }
+
+    .mat-expansion-panel-body {
+      padding: 0;
+    }
+  }
+}

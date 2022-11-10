@@ -1,0 +1,25 @@
+.full-width {
+  width: 100%;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+
+.mt-1 {
+  margin-right: 1rem;
+}
+
+.icon-btn {
+  border-radius: 50%;
+  width: 2.66rem !important;
+  height: 2.66rem !important;
+  background: white;
+  color: rgba(4, 55, 82, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  box-sizing: content-box !important;
+  cursor: pointer;
+}
