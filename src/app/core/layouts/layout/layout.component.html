@@ -1,26 +1,30 @@
 <div class="app-layout">
-  <mat-toolbar>Heading</mat-toolbar>
+  <mat-toolbar>
+    <button (click)="menuOpened = !menuOpened" mat-icon-button>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Heading</span>
+  </mat-toolbar>
 
   <mat-sidenav-container class="app-layout-sidenav-container">
     <!-- May useful for mobile view -->
-<!--    <mat-sidenav-->
-<!--      [opened]="true"-->
-<!--      [disableClose]="true"-->
-<!--      [mode]="'side'"-->
-<!--      class="app-layout__side-nav mat-elevation-z1"-->
-<!--    >-->
-<!--      <mat-accordion [displayMode]="'flat'">-->
-<!--        <mat-expansion-panel *ngFor="let data of fillerNav" hideToggle>-->
-<!--          <mat-expansion-panel-header>-->
-<!--            <mat-icon class="mr-1">home</mat-icon-->
-<!--            >Dashboard</mat-expansion-panel-header-->
-<!--          >-->
-<!--        </mat-expansion-panel>-->
-<!--      </mat-accordion>-->
-<!--    </mat-sidenav>-->
+    <mat-sidenav
+      [opened]="menuOpened"
+      [disableClose]="true"
+      [mode]="'side'"
+      class="app-layout__side-nav mat-elevation-z1"
+    >
+      <mat-accordion [displayMode]="'flat'">
+        <mat-expansion-panel *ngFor="let data of fillerNav" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-icon class="mr-1">home</mat-icon
+            >Dashboard</mat-expansion-panel-header
+          >
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-sidenav>
 
     <mat-sidenav-content>
-      Main content
       <router-outlet></router-outlet>
     </mat-sidenav-content>
   </mat-sidenav-container>
