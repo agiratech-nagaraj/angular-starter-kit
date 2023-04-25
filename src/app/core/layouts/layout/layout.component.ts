@@ -9,7 +9,7 @@ import { CustomIconsService } from '@app/core/services';
 })
 export class LayoutComponent implements OnInit {
   fillerNav = Array.from({ length: 5 }, (_, i) => `Nav Item ${i + 1}`);
-
+  menuOpened = false;
   constructor(private customIconService: CustomIconsService) {}
 
   ngOnInit(): void {}
