@@ -7,7 +7,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -23,7 +22,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule,
     MatSidenavModule,
     MatListModule,
     MatExpansionModule,
